@@ -30,7 +30,7 @@ const addTask = (task) => {
   completeButton.innerText = "やったで！";
   completeButton.style.marginLeft = "15px";
   completeButton.style.float = "right";
-  completeButton.style.background = "green";
+  completeButton.style.background = "lawngreen";
   completeButton.style.color = "white";
   completeButton.addEventListener("click", () => completeTask(completeButton));
 

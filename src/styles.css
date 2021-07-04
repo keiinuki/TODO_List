@@ -1,3 +1,7 @@
+body {
+  background: oldlace;
+}
+
 .isComplete {
   text-decoration: line-through red 3px;
 }
