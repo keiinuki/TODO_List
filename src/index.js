@@ -20,19 +20,23 @@ const addTask = (task) => {
   const removeButton = document.createElement("button");
   const completeButton = document.createElement("button");
 
-  removeButton.innerText = "やめるわ！";
-  removeButton.style.marginLeft = "15px";
+  removeButton.innerText = "消すで！";
+  removeButton.style.marginLeft = "25px";
   removeButton.style.float = "right";
+  removeButton.style.background = "red";
+  removeButton.style.color = "white";
   removeButton.addEventListener("click", () => removeTask(removeButton));
 
   completeButton.innerText = "やったで！";
   completeButton.style.marginLeft = "15px";
   completeButton.style.float = "right";
+  completeButton.style.background = "green";
+  completeButton.style.color = "white";
   completeButton.addEventListener("click", () => completeTask(completeButton));
 
   listItem.innerText = task;
-  listItem.style.width = "400px";
-  listItem.style.height = "48px";
+  listItem.style.height = "40px";
+  listItem.style.fontSize = "x-large";
   listItem.appendChild(completeButton);
   listItem.appendChild(removeButton);
   addTaskTarget.appendChild(listItem);

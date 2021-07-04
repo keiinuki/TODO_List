@@ -2,13 +2,26 @@
   text-decoration: line-through red 3px;
 }
 
-.title {
+h1 {
   display: flex;
   justify-content: center;
 }
-
-.addTask-target {
+.container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+}
+
+.item {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+button {
+  background: blue;
+  color: white;
+}
+
+input {
+  height: 25px;
 }
