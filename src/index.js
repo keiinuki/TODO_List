@@ -1,8 +1,8 @@
 import "./styles.css";
 
-const addTaskTrigger = document.getElementsByClassName("js-addTask-trigger")[0];
-const addTaskTarget = document.getElementsByClassName("js-addTask-target")[0];
-const addTaskValue = document.getElementsByClassName("js-addTask-value")[0];
+const addTaskTrigger = document.getElementsByClassName("addTask-trigger")[0];
+const addTaskTarget = document.getElementsByClassName("addTask-target")[0];
+const addTaskValue = document.getElementsByClassName("addTask-value")[0];
 
 const removeTask = (removeButton) => {
   const targetTask = removeButton.closest("li");
@@ -20,21 +20,21 @@ const addTask = (task) => {
   const removeButton = document.createElement("button");
   const completeButton = document.createElement("button");
 
-  removeButton.innerText = "消すよ！";
+  removeButton.innerText = "やめるわ！";
   removeButton.style.marginLeft = "15px";
-  removeButton.style.position = "abslute";
+  removeButton.style.float = "right";
   removeButton.addEventListener("click", () => removeTask(removeButton));
 
-  completeButton.innerText = "やったよ！";
+  completeButton.innerText = "やったで！";
   completeButton.style.marginLeft = "15px";
-  completeButton.style.position = "relative";
+  completeButton.style.float = "right";
   completeButton.addEventListener("click", () => completeTask(completeButton));
 
   listItem.innerText = task;
-  listItem.style.width = "200px";
-  listItem.style.backgroundColor = "red";
-  listItem.append(completeButton);
-  listItem.append(removeButton);
+  listItem.style.width = "400px";
+  listItem.style.height = "48px";
+  listItem.appendChild(completeButton);
+  listItem.appendChild(removeButton);
   addTaskTarget.appendChild(listItem);
 };
 

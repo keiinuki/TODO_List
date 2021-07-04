@@ -1,3 +1,14 @@
 .isComplete {
   text-decoration: line-through red 3px;
 }
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.addTask-target {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
