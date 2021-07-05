@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./docs/src/styles.css";
 
 // タスクを表示させるためのきっかけ(trigger)表示場所(target)値(value)を定義
 const addTaskTrigger = document.getElementsByClassName("addTask-trigger")[0];
